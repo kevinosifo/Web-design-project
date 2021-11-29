@@ -1,0 +1,25 @@
+*{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px
+}
+p{
+  font-family: 'Merriweather', serif;
+  color: #53A2BE;
+}
+
+footer {
+  text-align: center;
+  padding: 4px;
+  color: #C7CCDB;
+  background-color: #2A324B;
+}
+
+body{
+  background-color: #0A2239;
+}
+
+.tab{
+  margin: 0;
+  padding: 0;
+}

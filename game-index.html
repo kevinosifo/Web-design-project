@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Guess the number</title>
+</head>
+
+<body>
+  <h1>Guess the Number!</h1>
+  <p>If you want to try build your own PC, we have practically exclusive stock, from the latest and greatest of high-end specs, to more affordable middle of the road everyday PCs that can still comfortably run most modern games. But what if you can’t build your own PC? Well, you needn’t worry, because we offer an exclusive 2-day course which will have you building like Ian “8pack” perry! You’ll even have a choice of Operating Systems, Windows 7, Windows 10, Windows 11, MacOS, or Linux, if your unsure which, our in-house software engineers will break down and explain the pros and cons of each one, free of charge.Or maybe you want to buy a PC premade? We cover all ranges, from €140 MacBook’s to the 8Pack OrionX, ever seen a PC that cost more then the deposit for a family home? Well, now you have!
+  </p>
+  <p>I am thinking of a number and this number is between 1-100, guess what number i am thinking</p>
+  
+
+  <form>
+    <label for="guess">My Guess</label>
+    <input type="number" id="guess">
+    <input type="submit" id="submitGuess" value="Check My Guess">
+  </form>
+
+  <p id="feedback"></p>
+
+  <script>
+    const randomNumber = Math.floor(Math.random() * 100) + 1
+    console.log('Random Number', randomNumber) 
+
+    function checkGuess() {
+      let myGuess = guess.value
+      if (myGuess === randomNumber) {
+        feedback.textContent = "You got it right!"
+      } else if (myGuess > randomNumber) {
+        feedback.textContent = "Your guess was " + myGuess + ". That's too high. Try Again!"
+      } else if (myGuess < randomNumber) {
+       feedback.textContent = "Your guess was " + myGuess + ". That's too low. Try Again!"
+     }
+   }
+   submitGuess.addEventListener('click', checkGuess)
+ </script>
+
+</body>
+
+</html>

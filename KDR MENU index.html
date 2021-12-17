@@ -28,12 +28,17 @@
 
   <!-- Section: Images -->
 			<div>
-				<img src="gaming cafe 5.jpg" alt="coffee" height="300" width="200">
-				<img src="Gaming Cafe 7.jpeg" alt="stage" height="300">
+
+				<img id="imagenew" src="gaming_cafe_5.jpg" alt="coffee" height="300" width="200">
+
+
+
+
+				<img src="Gaming_Cafe_7.jpeg" alt="stage"  height="300">
 				<img src="coffee_1.jpg" alt="coffee 1" height="300">
 				<img src="coffee_2.jpg" alt="coffee 2" height="250" width="350">
 				<img src="soft_drink_1.jpg" alt="soft drink" height="300">
-
+				<button onclick="showNew()">Click to see coffee</button>
 			</div>
 			<H1> Menu </H1>
 				<p>	Of course, we’re still a café, so while your gaming, why not partake of our wide array of drinks and snacks? There’s classics like Monster, Mtn Dew, Pepperoni, or more café-based items such as Cappuccinos, Banana muffins, and if your over 18 and want a pick me up, Irish and Bailey’s coffees.
@@ -82,7 +87,7 @@
 							<td>Latte 					€ 2.80</td>
 							<td>Club Orange 			€ 1.20</td>
 							<td>Jambon						€ 2.00</td>
-					</tr>>
+					</tr>
 
 
 					<tr>
@@ -211,6 +216,25 @@
 						<td> Cork Dry Gin 			€3.10 </td>
 					</tr>
 			<table>
+
 					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+					<script>
+
+							function showNew(){
+
+								var showImage = document.getElementById("imagenew");
+								if(showImage.style.display === 'none'){
+
+									showImage.style.display= 'inline';
+								}
+								else{
+									showImage.style.display = 'none';
+								}
+
+							}
+
+
+
+					 </script>
 				<body>
 </html>
